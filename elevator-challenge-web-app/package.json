@@ -1,0 +1,16 @@
+{
+  "name": "elevator-challenge-web-app-version",
+  "version": "1.0.0",
+  "description": "A full stack web app version of the elevator challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/index.js"
+  },
+  "author": "Joseph Nasser",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

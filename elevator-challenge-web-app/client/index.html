@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Elevator challenge!</title>     
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/Person.js"></script>
+    <script type="text/javascript" src="js/Elevator.js"></script>
+  </head>  
+  
+  <body>
+    <div class="controls">
+      Elevator challenge! <br/><br/>  
+      <button id="btn-dispatch">Dispatch elevator</button>      
+    </div>
+    <div class="elevator-rail">
+      <div id='elevator-container'>
+        <div id="floor-display">0</div>
+        <div class="elevator">
+          <div class="elevator-doors"></div>
+          <div class="elevator-doors"></div>      
+        </div>
+        <div class="requests">
+          <div class='requests-list-container'>
+            Requests:
+            <ul id='ul-requests'></ul>
+          </div>
+          <div class='riders-list-container'>
+            Passengers:
+            <ol id='ol-riders'></ol>
+          </div>
+          <span id="current-action"></span>
+        </div>
+
+      </div>
+    </div>
+  </body>
+
+  <script type='text/javascript' src="js/animate.js"></script>
+</html>
