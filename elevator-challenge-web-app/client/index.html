@@ -8,28 +8,49 @@
   
   <body>
     <div class="controls">
-      Elevator challenge! <br/><br/>  
+      <h1>Elevator challenge!</h1> <br/><br/>  
       <button id="btn-dispatch">Dispatch elevator</button>      
     </div>
-    <div class="elevator-rail">
-      <div id='elevator-container'>
-        <div id="floor-display">0</div>
-        <div class="elevator">
-          <div class="elevator-doors"></div>
-          <div class="elevator-doors"></div>      
-        </div>
-        <div class="requests">
-          <div class='requests-list-container'>
-            Requests:
-            <ul id='ul-requests'></ul>
+    <main>
+      <div id="options">
+        <h1>Options</h1>
+        <div class="option-container">
+          <h3>Add person</h3>
+          <div class="option-input">
+            Name: <input type="text" name="name"/>
           </div>
-          <div class='riders-list-container'>
-            Passengers:
-            <ol id='ol-riders'></ol>
+          <div class="option-input">
+            Starting floor: <input type="number" name="startingFloor"/>
           </div>
-          <span id="current-action"></span>
+          <div class="option-input">
+            Dropoff floor: <input type="number" name="dropoffFloor"/>
+          </div>
+          <button id="button-add-rider">
+            Add
+          </button>
         </div>
-
+      </div>
+  
+      <div class="elevator-rail">
+        <div id='elevator-container'>
+          <div id="floor-display">0</div>
+          <div class="elevator">
+            <div class="elevator-doors"></div>
+            <div class="elevator-doors"></div>      
+          </div>
+          <div class="requests">
+            <div class='requests-list-container'>
+              Requests:
+              <ul id='ul-requests'></ul>
+            </div>
+            <div class='riders-list-container'>
+              Passengers:
+              <ol id='ol-riders'></ol>
+            </div>
+            <span id="current-action"></span>
+          </div>
+  
+        </div>
       </div>
     </div>
   </body>

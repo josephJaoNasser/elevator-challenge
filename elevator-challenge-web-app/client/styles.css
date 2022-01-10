@@ -7,17 +7,13 @@ body {
   background-color: #16212c;
 }
 
+main {
+  display: flex;
+}
+
 .controls{
   text-align: center;
   margin: 1.1em;
-}
-
-#btn-dispatch {
-  background-color: green;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  cursor: pointer;
 }
 
 .elevator{
@@ -33,23 +29,6 @@ body {
   box-shadow: 1px 2px 8px 4px rgba(0,0,0,0.42);
   -webkit-box-shadow: 1px 2px 8px 4px rgba(0,0,0,0.42);
   -moz-box-shadow: 1px 2px 8px 4px rgba(0,0,0,0.42);
-}
-
-
-#elevator-container {
-  position: absolute;  
-  left: 5px;
-}
-
-#floor-display{
-  text-align: center;
-  background-color: #303030;
-  width: 50%;
-  margin: 0 auto;
-  border-radius: 5px;
-  color: goldenrod;
-  margin-bottom: 5px;
-  font-weight: bold;
 }
 
 .elevator-rail {
@@ -98,3 +77,48 @@ body {
   background-color: rgba(14, 83, 0, 0.42);
 }
 
+.option-container{
+  margin-top: 1em;
+  padding:1em;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap:2
+}
+
+.option-input {
+  margin-bottom: 1em;
+}
+
+.option-input > input {
+  color:black
+}
+
+#btn-dispatch, #button-add-rider {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#elevator-container {
+  position: absolute;  
+  left: 5px;
+}
+
+#floor-display{
+  text-align: center;
+  background-color: #303030;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: goldenrod;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#options {
+  margin-left: 1em;
+}
